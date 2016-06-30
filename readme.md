@@ -35,3 +35,7 @@ scrapy代理设置，将测试通过的代理ip文件导入scrapy中，通过随
 
 `HTTPPROXY_FILE_PATH`为ip代理文件路径，`RETRY_TIMES`为请求连接失败重试次数，`PROXY_USED_TIMES` proxy失败重试次数，`RETRY_HTTP_CODES`为重试返回码。`HTTPPROXY_FILE_PATH`为必填值。
 运行`python scrapy_test_api.py`测试抓取百度百科。
+
+`HTTPPROXY_FILE_PATH`文件格式为：请求协议://用户名:密码@ip地址:端口号
+例如：http://proxy.example.com/
+或者http://joe:password@proxy.example.com/
